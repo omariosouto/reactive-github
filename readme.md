@@ -9,5 +9,8 @@
 - App que consome a API do GitHub: https://api.github.com/
 - Documentação da API: http://developer.github.com/v3
 
-# Fase 01
-- Fazer toda a marcação do app
+# 01 - Fazer toda a marcação do app
+- Sempre começar em um componente stateless, fazendo toda a marcação da necessária para ai então fazer as ações e separar em componentes
+
+# 02 - Separar os componentes
+- ...
