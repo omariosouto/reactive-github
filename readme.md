@@ -47,5 +47,5 @@ class App extends Component {
 - Adicionada a biblioteca Ajax do @fdaciuk
 - Criação do evento de consultar a API do github a partir do componente `search.js`
 
-# 05 - ... 
-- ...
+# 05 - Populando corretamente os dados do usuário
+- Trazer a função de consulta da API pra o componente `App` e passar como prop em um handleSearch para o componente de busca
