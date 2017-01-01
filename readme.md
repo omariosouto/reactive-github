@@ -54,3 +54,7 @@ class App extends Component {
 # 06 - Eventos para complementar a UX
 - Habilitar e desabilitar o campo de busca
 - Como o foco do React não é manipulação de DOM, ele gerencia eventos passando um `null` para o objeto de evento. Isso ocorre pelo fato dele reautilizar o mesmo, por isso é necessário criar uma variavel que receba o target do evento, ou utilizar e.persist() (para o react persistir com os dados do evento) 
+
+# 07 - Atribuição de loader
+-  Como cada componente é individual, criamos um estado que informa se está acontecendo uma transição de dados ou não e ai criamos um loader por exemplo.
+
