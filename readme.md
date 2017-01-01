@@ -58,3 +58,4 @@ class App extends Component {
 # 07 - Atribuição de loader
 -  Como cada componente é individual, criamos um estado que informa se está acontecendo uma transição de dados ou não e ai criamos um loader por exemplo.
 
+# 08 - Organizando as propTypes
