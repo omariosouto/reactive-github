@@ -1,38 +1,36 @@
 'use strict'
 
 import React, { Component } from 'react'
-import Search from './components/search.js'
-import UserInfo from './components/user-info/user-info.js'
-import Actions from './components/actions/actions.js'
-import Repos from './components/repos/repos.js'
+import AppContent from './components/app-content.js'
 
 class App extends Component {
+  constructor () {
+    super()
+    this.state = {
+      userinfo: {
+        username: 'Mario Souto',
+        login: 'soutomario',
+        photo: 'https://avatars.githubusercontent.com/u/13791385?v=3',
+        repos: 20,
+        followers: 23,
+        following: 17
+      },
+      repos: [{
+        name: 'Repo',
+        link: '#'
+      }],
+      starred: [{
+        name: 'Stars',
+        link: '#'
+      }]
+    }
+  }
   render () {
-    return (
-      <div className='app'>
-        <Search />
-        <UserInfo />
-        <Actions />
-
-        <Repos
-          className='repos'
-          title='Repositórios'
-          repos={[{
-            name: 'Nome do repositório',
-            link: '#'
-          }]}
-        />
-
-        <Repos
-          className='starred'
-          title='Favoritos'
-          repos={[{
-            name: 'Nome do repositório',
-            link: '#'
-          }]}
-        />
-      </div>
-    )
+    return <AppContent
+      userinfo={this.state.userinfo}
+      repos={this.state.repos}
+      starred={this.state.starred}
+    />
   }
 }
 
