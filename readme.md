@@ -43,5 +43,9 @@ class App extends Component {
 * AppContainer - Define os propTypes das props que ele recebe e repassa as mesmas para os componentes mais internos. E assim segue o fluxo.
 * Cada componente tem atribuida de maneira estática as props que serão recebidas dinamicamente pela api.
 
+# 04 - Fazer o request dos dados do usuário
+- Adicionada a biblioteca Ajax do @fdaciuk
+- Criação do evento de consultar a API do github a partir do componente `search.js`
 
-
+# 05 - ... 
+- ...
