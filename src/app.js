@@ -9,14 +9,8 @@ class App extends Component {
     super()
     this.state = {
       userinfo: null,
-      repos: [{
-        name: 'Repo',
-        link: '#'
-      } ],
-      starred: [{
-        name: 'Stars',
-        link: '#'
-      }]
+      repos: [],
+      starred: []
     }
   }
 
@@ -43,14 +37,30 @@ class App extends Component {
     }
   }
 
+  getRepos (type) {
+    return (e) => {
+      console.log('type:', type)
+
+      ajax().get(`https://api.github.com/users/soutomario/${type}`)
+      .then((result) => {
+        this.setState({
+          [type]: result.map((repo, index) => ({
+            name: repo.name,
+            link: repo.html_url
+          }))
+        })
+      })
+    }
+  }
+
   render () {
     return <AppContent
       userinfo={this.state.userinfo}
       repos={this.state.repos}
       starred={this.state.starred}
       handleSearch={(e) => this.handleSearch(e)}
-      getRepos={() => console.log('getRepos')}
-      getStarred={() => console.log('getStarred')}
+      getRepos={this.getRepos('repos')}
+      getStarred={this.getRepos('starred')}
     />
   }
 }
