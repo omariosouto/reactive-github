@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/soutomario/reactive-github.svg?branch=develop)](https://travis-ci.org/soutomario/reactive-github)
+
 # Conceitos do React
 - ajax?
 - utilizando outras libs para manipular o dom?
