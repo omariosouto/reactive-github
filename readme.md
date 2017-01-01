@@ -50,3 +50,7 @@ class App extends Component {
 # 05 - Populando corretamente os dados do usuário
 - Trazer a função de consulta da API pra o componente `App` e passar como prop em um handleSearch para o componente de busca
 - Popular dados dos repositórios
+
+# 06 - Eventos para complementar a UX
+- Habilitar e desabilitar o campo de busca
+- Como o foco do React não é manipulação de DOM, ele gerencia eventos passando um `null` para o objeto de evento. Isso ocorre pelo fato dele reautilizar o mesmo, por isso é necessário criar uma variavel que receba o target do evento, ou utilizar e.persist() (para o react persistir com os dados do evento) 
