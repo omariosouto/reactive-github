@@ -49,3 +49,4 @@ class App extends Component {
 
 # 05 - Populando corretamente os dados do usuário
 - Trazer a função de consulta da API pra o componente `App` e passar como prop em um handleSearch para o componente de busca
+- Popular dados dos repositórios
